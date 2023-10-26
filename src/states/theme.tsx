@@ -11,7 +11,7 @@ interface ThemeState {
 }
 
 export const useThemeStore = create<ThemeState>()((set) => ({
-    theme: ThemeTypes.Dark,
+    theme: ThemeTypes.Light,
     changeTheme: () => set((state) => ({
         theme: state.theme === ThemeTypes.Light ? ThemeTypes.Dark : ThemeTypes.Light
     })),
